@@ -21,6 +21,13 @@
 
 # Pulsar Python client library
 
+## Fresh Relevance Fork
+
+A fork of the official pulsar client for python. Includes custom changes to support building a wheel
+from the latest [CPP](https://github.com/apache/pulsar-client-cpp) and [Python](https://github.com/apache/pulsar-client-python) source.
+
+Run `./build-wheel.sh`. Requires docker.
+
 ## Requirements
 
 - Python >= 3.7

@@ -105,8 +105,7 @@ RUN CURL_VERSION=$(dep-version.py curl) && \
 # Pulsar client C++
 RUN PULSAR_CPP_VERSION=$(dep-version.py pulsar-cpp) && \
     . /dep-url.sh && download_dependency /dependencies.yaml pulsar-cpp && \
-    cd apache-pulsar-client-cpp-${PULSAR_CPP_VERSION} && \
+    cd pulsar-client-cpp-main && \
     cmake . -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=OFF -DBUILD_STATIC_LIB=OFF -DLINK_STATIC=ON && \
     make -j8 && \
-    make install && \
-    rm -rf apache-pulsar-client-cpp-${PULSAR_CPP_VERSION} apache-pulsar-client-cpp-${PULSAR_CPP_VERSION}.tar.gz
+    make install

@@ -42,7 +42,7 @@ download_dependency() {
       URL=https://github.com/Kitware/CMake/releases/download/v${VERSION}/cmake-${VERSION}-linux-${ARCH}.tar.gz
       ;;
     "pulsar-cpp")
-      URL=$(pulsar_cpp_base_url $VERSION)/apache-pulsar-client-cpp-${VERSION}.tar.gz
+      URL=https://github.com/apache/pulsar-client-cpp/archive/refs/heads/main.tar.gz
       ;;
     "pybind11")
       URL=https://github.com/pybind/pybind11/archive/refs/tags/v${VERSION}.tar.gz

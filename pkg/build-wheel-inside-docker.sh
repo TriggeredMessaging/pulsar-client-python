@@ -28,7 +28,7 @@ tar zxf v${PYBIND11_VERSION}.tar.gz
 rm -rf pybind11
 mv pybind11-${PYBIND11_VERSION} pybind11
 
-rm -f CMakeCache.txt CMakeFiles
+rm -rf CMakeCache.txt CMakeFiles
 
 cmake . \
       -DCMAKE_BUILD_TYPE=Release
